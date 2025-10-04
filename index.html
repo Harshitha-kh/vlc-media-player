@@ -41,10 +41,33 @@
   </header>
   <main id="main"> </main>
   <div class="toast">100%</div>
-  <footer style="margin-left: 8rem">
-    <i class="fa-solid fa-play"></i>
-    <i class="fa-solid fa-pause"></i>
+  <footer >
+  <div class="footer">
+    
+    <span id="currentTime">0:00</span>
+      
+   
+  <div class="progress-container" >
+    
+    <div class="progress-fill" id="progressFill"></div>
+    <div class="progress-circle"></div>
+    
+  </div>
+  <span id="totalTime">0:00</span>
+  </div>
+  <div class="controls">
+    <div class="play">
+      <i class="fa-solid fa-play fa-lg"></i>
+    </div>
+
+    <div class="speed">
+      <i class="fa-solid fa-forward-fast"></i>
+    <i class="fa-solid fa-pause pause"></i>
+    <i class="fa-solid fa-backward-fast"></i>
     <i class="fa-solid fa-expand" id="fullScreen"></i>
+    </div>
+    
+  </div>
   </footer>
 </body>
 <script src="script.js"></script>
