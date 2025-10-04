@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="titlebar">
+      <img src="./VLC-header.png" alt="media-player" class="title-img">
+      <h2 class="heading">VLC Media Player</h2>
+    </div>
+    <div class="menu-bar">
+      <div class="menu">
+        <div class="menu-btn" id="videobtn">Open</div>
+        <input type="file" id="videoinput" class="videoinput">
+      </div>
+      <div class="menu">
+        <div class="menu-play-btn">
+          Playback
+          <ul class="menu-items-speed">
+            <li id="speedup">SpeedUp</li>
+            <li id="speeddown">SpeedDown</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu-audio-btn">
+          Audio
+          <ul class="menu-items-vol">
+            <li id="volup">Volume Up</li>
+            <li id="voldown">Volume Down</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main"> </main>
+  <div class="toast">100%</div>
+  <footer style="margin-left: 8rem">
+    <i class="fa-solid fa-play"></i>
+    <i class="fa-solid fa-pause"></i>
+    <i class="fa-solid fa-expand" id="fullScreen"></i>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>

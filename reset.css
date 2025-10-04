@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* disables scroll */
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+

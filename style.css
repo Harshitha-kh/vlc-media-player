@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+
+
+h2 {
+  margin: 0;
+  display: inline-block;
+}
+
+header {
+  height: 5rem;
+}
+
+
+.titlebar {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-size: 1rem;
+}
+
+.title-img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  height: 50%;
+}
+
+footer {
+  height: 3rem;
+}
+
+
+.menu {
+  position: relative;
+}
+
+.menu-btn,
+.menu-play-btn,
+.menu-audio-btn {
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+
+.menu-items-speed,
+.menu-items-vol {
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 9rem;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  z-index: 100; 
+}
+
+
+li {
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #ddd;
+}
+
+
+.menu:hover .menu-items-speed,
+.menu:hover .menu-items-vol {
+  display: block;
+}
+
+
+.videoinput {
+  display: none;
+}
+
+
+main {
+  background-color: black;
+  height: calc(100vh - 8rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.video {
+  height: 100%;
+  width: auto;
+}
+.toast {
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 99px;
+    right:50px;
+    display:none;
+}
+
+
